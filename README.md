@@ -28,29 +28,30 @@ Bus schedules are optimized for regularity and reliability, not randomness. This
 - **Jupyter Notebook**: Interactive coding and documentation.
 - **project-validation.py**: Script to validate project code against test cases.
 
-## Deliverables
-- A complete visualization of San Diego's bus system using shapefiles and stop data.
-- A Python script (`project.py`) containing all functional code.
-- A validation script (`project-validation.py`) to confirm correctness and readiness for submission.
-
 ---
 
-## San Diego City Boundary
+## San Diego City Boundary Visualization
 
 **Description**:  
-Utilized a shapefile to plot the geographic outline of San Diego, establishing a foundational map for subsequent transit data visualizations.
+Build a clean, organized bus schedule and map visualization for selected San Diego routes:
+  - **`create_detailed_schedule`:** Combine schedule, stop, and trip data into a structured DataFrame showing the full stop sequence for each trip. Ensure routes are sorted properly and grouped by bus line.
+  - **`visualize_bus_network`:** Plot the bus routes on an interactive map using Plotly, assigning each line a distinct color and enabling hover labels for bus stop names.
 
-![San Diego City Boundary](![ScreenRecording2025-04-25at12 03 51PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8ed508ed-60e1-4651-8e69-e71860dd4da0)
-)
+
+[ScreenRecording2025-04-25at12 03 51PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8ed508ed-60e1-4651-8e69-e71860dd4da0)
+
 
 ---
 
 ## MTS Bus Stops Distribution
 
-**Description**:  
-Plotted all MTS bus stops within San Diego, revealing the distribution and density of stops across various neighborhoods.
+**Description**:   
+Build a system to find the shortest bus route between two stops using a graph traversal approach:
+  - **`find_neighbors`:** Identify all immediate next stops from a given station by looking across multiple bus trips and routes in the dataset.
+  - **`bfs`:** Implement Breadth-First Search (BFS) to find the shortest path (fewest stops) between a start and end station, returning an ordered list of stops with their coordinates.
 
-![MTS Bus Stops](insert_image_path_here)
+![ScreenRecording2025-04-25at12 16 04PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d7a7238b-9da5-4b16-9130-3253ca304f97)
+
 
 ---
 
