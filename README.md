@@ -1,4 +1,4 @@
-# Project 1 – MTS Transit: Navigating San Diego's Bus Network 🚌
+# MTS Transit: Navigating San Diego's Bus Network 🚌
 
 ## Project Overview
 This project explores the structure and behavior of San Diego’s MTS bus network through data visualization and statistical analysis. By mapping the bus system and evaluating arrival intervals, the project highlights patterns in public transit service and examines assumptions often made in modeling passenger wait times.
