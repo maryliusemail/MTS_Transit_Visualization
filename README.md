@@ -28,11 +28,14 @@ This project is ready to run with real data, interactive maps, and histogram vis
    ```bash
    pip install pandas numpy geopandas plotly
 3. **Run the project from your terminal**  
-**Navigate to your project folder (replace with your actual folder path) and run the main.py:**
-
+Navigate to your project folder (replace with your actual folder path):
    ```bash
    cd path/to/MTS_Transit_Visualization-main
+   ```
+cd path/to/MTS_Transit_Visualization-main 
+   ```bash
    python3 main.py
+  ```
 
 ## 🛠️ Customization
 
