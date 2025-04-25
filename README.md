@@ -86,4 +86,50 @@ This paradox helps explain why passengers frequently experience longer wait time
 By simulating and visualizing bus arrivals and passenger waiting times within a specific one-hour window, we can see this phenomenon clearly — and better appreciate the hidden challenges of real-world transit systems.
 
 
+# 📈 Comparing Simulated and Real Bus Arrival Times
+
+## Real Bus Arrival Data
+
+Until now, we used simulated bus arrival data based on the Poisson process.  
+Now, we’ll look at real bus arrival data at the UTC Transit Center to see if it follows the same pattern.
+
+We will:
+- Calculate the time between real bus arrivals.
+- Compare the real intervals to our simulated data.
+- See if real bus arrivals follow an exponential distribution like a true Poisson process.
+
+If they do, real buses behave like our simulation.  
+If not, it shows that real-world factors (like traffic and scheduling) cause differences.
+
+![ScreenRecording2025-04-25at12 33 22PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ab097ca8-eeba-40fd-b955-e4ee5fa11528)
+
+## 🚍 Does the Waiting Time Paradox Still Hold in Real Bus Data?
+
+After analyzing real-world bus arrival intervals, we find that they do **not** decrease exponentially.  
+This means that actual bus arrivals **do not** follow a Poisson process — which makes sense, since real buses follow planned schedules rather than random timings.
+
+Even though arrivals aren't purely random, we can still test whether the **Waiting Time Paradox** appears in practice:  
+> The paradox suggests that the average wait time for a randomly arriving passenger is **longer than half** the average interval between buses.
+
+Using the `simulate_wait_times()` function on real bus data:
+
+- **Average Bus Arrival Interval:** ~7.0 minutes  
+- **Average Passenger Wait Time:** ~5.0 minutes
+
+While the average wait time is slightly under the interval midpoint, it's still **noticeably longer than what passengers might expect** if they assumed buses arrived perfectly evenly.
+
+This confirms that the paradox still applies — not because of randomness, but because **passengers are more likely to arrive during longer gaps**, which skew average wait times upward.  
+Even in a structured transit system, the effect remains visible, illustrating how human experience can differ from schedule-based expectations.
+
+## 🧾 Conclusion
+
+This project explored the behavior of bus arrivals and passenger wait times through both simulated and real-world data. Using tools like pandas, Plotly, and graph algorithms, we built a detailed view of San Diego’s bus network, simulated bus and passenger arrivals, and visualized patterns across multiple scenarios.
+
+Through simulation, we confirmed the **Waiting Time Paradox**: passengers arriving at random times often wait longer than expected due to the exponential nature of time intervals in a Poisson process. Interestingly, even real bus data — which does not follow a Poisson distribution — still showed signs of the paradox. Although actual bus systems are structured and scheduled, passengers tend to arrive during longer intervals, resulting in wait times that are longer than half the average interval.
+
+These findings highlight a key insight: even in systems designed for regularity, human experience can feel irregular due to the way time intervals play out. This has important implications not only for transit planning but also for how we model and interpret randomness in real life.
+
+Overall, this project was a blend of theory and practice, showing how statistical models and simulations can help explain everyday phenomena — and why the bus always seems late.
+
+
 ---
