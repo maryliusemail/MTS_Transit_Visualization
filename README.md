@@ -1,7 +1,29 @@
 # MTS Transit: Navigating San Diego's Bus Network 🚌
 
+## 🛠️ Try It Yourself
+
+Want to explore the Waiting Time Paradox and bus network simulations on your own?
+
+### 📦 What You'll Need
+- The provided `.py` file(s) containing all functions (e.g. `simulate_bus_arrivals_uniform()`, `simulate_wait_times()`, etc.)
+- The dataset files (including bus stops, trips, and schedule data)
+- Python 3.x installed (recommend using Anaconda or a virtual environment)
+- Required Python libraries:
+  - `pandas`
+  - `numpy`
+  - `geopandas`
+  - `plotly`
+  - `matplotlib` (optional for additional plots)
+
+### 🚀 How to Run the Program
+1. **Clone or download** the repository (or the `.py` file and data files).
+2. **Install required packages** if you haven't already:
+   ```bash
+   pip install pandas numpy geopandas plotly
+
 ## Project Overview
 This project explores the structure and behavior of San Diego’s MTS bus network through data visualization and statistical analysis. By mapping the bus system and evaluating arrival intervals, the project highlights patterns in public transit service and examines assumptions often made in modeling passenger wait times.
+
 
 ## Objective
 Visualize San Diego's bus lines and stops, using shapefiles and schedule data to reveal spatial patterns in the city’s transit network. Assess statistical properties of bus arrivals and analyze how they differ from theoretical models.
