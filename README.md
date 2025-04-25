@@ -76,8 +76,6 @@ Transit systems are designed around schedules, not randomness. Analytical models
 - **Shapely**: Geometric operations on spatial data.
 - **Matplotlib**: Plotting static graphs and maps.
 - **NumPy**: Numerical computations.
-- **Jupyter Notebook**: Interactive coding and documentation.
-- **project-validation.py**: Script to validate project code against test cases.
 
 ---
 
