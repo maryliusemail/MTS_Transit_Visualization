@@ -2,24 +2,56 @@
 
 ## 🛠️ Try It Yourself
 
-Want to explore the Waiting Time Paradox and bus network simulations on your own?
+Want to explore the Waiting Time Paradox and bus network simulations on your own?  
+This project is ready to run with real data, interactive maps, and histogram visualizations—all powered by Python.
+
+---
 
 ### 📦 What You'll Need
-- The provided `.py` file(s) containing all functions (e.g. `simulate_bus_arrivals_uniform()`, `simulate_wait_times()`, etc.)
-- The dataset files (including bus stops, trips, and schedule data)
-- Python 3.x installed (recommend using Anaconda or a virtual environment)
+- The provided `.py` files:
+  - `main.py` – the script that runs the entire project
+  - `project.py` – contains all simulation and visualization functions
+- A `data/` folder with:
+  - `stations.csv`, `routes.csv`, `schedule.csv`
+  - `data_city.shp` and associated shapefile components
+- Python 3.x (Anaconda or virtual environments recommended)
 - Required Python libraries:
   - `pandas`
   - `numpy`
   - `geopandas`
   - `plotly`
-  - `matplotlib` (optional for additional plots)
+  - `shapely`
 
 ### 🚀 How to Run the Program
-1. **Clone or download** the repository (or the `.py` file and data files).
-2. **Install required packages** if you haven't already:
+1. **Download or clone** the full project folder.
+2. **Install required packages** (if not already installed):
    ```bash
    pip install pandas numpy geopandas plotly
+3. **Run the project from your terminal**
+   ```bash
+   python3 main.py
+
+## 🛠️ Customization
+
+Want to explore different scenarios? The `main.py` file is easy to modify so you can test how changes affect passenger experience and transit behavior.
+
+Here’s what you can tweak:
+
+---
+
+### ⏱ Change Bus Frequency
+
+In `main.py`, look for this line:
+
+tau = 10  # Average time between bus arrivals in minutes
+
+### 🎯 Sample Recommendations
+
+- Try lowering `tau` to simulate more frequent buses (e.g., `tau = 5`).
+- Try increasing `tau` to simulate delays or longer wait times (e.g., `tau = 15`).
+
+
+   
 
 ## Project Overview
 This project explores the structure and behavior of San Diego’s MTS bus network through data visualization and statistical analysis. By mapping the bus system and evaluating arrival intervals, the project highlights patterns in public transit service and examines assumptions often made in modeling passenger wait times.
