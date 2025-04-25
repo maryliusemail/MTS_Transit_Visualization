@@ -118,7 +118,7 @@ In a Poisson process, the time between events follows an exponential distributio
 
 ---
 
-## Why the Bus Feels Late: Simulating and Visualizing Bus Transit Patterns
+## Why the Bus Feels Late: Simulating Bus Transit Patterns
 
 **Description**:   
 Simulate and visualize how passenger wait times vary throughout the day to better understand the Waiting Time Paradox:
