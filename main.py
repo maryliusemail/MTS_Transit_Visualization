@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from shapely.geometry import Point
 
 # Import functions you already wrote
-from helpers import create_detailed_schedule, visualize_bus_network, find_neighbors, bfs, simulate_bus_arrivals_uniform, simulate_wait_times, visualize_wait_times
+from project import create_detailed_schedule, visualize_bus_network, find_neighbors, bfs, simulate_bus_arrivals_uniform, simulate_wait_times, visualize_wait_times
 
 # === Load data ===
 stops = pd.read_csv('data/stops.csv')
