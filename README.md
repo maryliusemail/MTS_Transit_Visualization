@@ -27,8 +27,9 @@ This project is ready to run with real data, interactive maps, and histogram vis
 2. **Install required packages** (if not already installed):
    ```bash
    pip install pandas numpy geopandas plotly
-3. **Run the project from your terminal**
-   **Navigate to your project folder (replace with your actual folder path) and run the main.py:**
+3. **Run the project from your terminal**  
+**Navigate to your project folder (replace with your actual folder path) and run the main.py:**
+
    ```bash
    cd path/to/MTS_Transit_Visualization-main
    python3 main.py
