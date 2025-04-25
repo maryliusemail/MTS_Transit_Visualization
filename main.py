@@ -7,12 +7,12 @@ import plotly.graph_objects as go
 from shapely.geometry import Point
 
 # Import functions you already wrote
-from project import create_detailed_schedule, visualize_bus_network, find_neighbors, bfs, simulate_bus_arrivals_uniform, simulate_wait_times, visualize_wait_times
+from project import create_detailed_schedule, visualize_bus_network, find_neighbors, bfs, simulate_bus_arrivals, simulate_wait_times, visualize_wait_times
 
 # === Load data ===
-stops = pd.read_csv('data/stops.csv')
-trips = pd.read_csv('data/trips.csv')
-schedule = pd.read_csv('data/stop_times.csv')
+stops = pd.read_csv('data/stations.csv')
+trips = pd.read_csv('data/routes.csv')
+schedule = pd.read_csv('data/schedule.csv')
 
 # === Set parameters ===
 bus_lines = ['30', '41', '43', '44', '105', '120', '150', '201', '202', '235']
@@ -78,6 +78,10 @@ def shortest_path_visualization(route_points_sorted):
     )
 
     return fig
+
+
+
+
 
 # Plot shortest path
 fig2 = shortest_path_visualization(path_df)
