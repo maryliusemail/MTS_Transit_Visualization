@@ -38,7 +38,7 @@ Build a clean, organized bus schedule and map visualization for selected San Die
   - **`visualize_bus_network`:** Plot the bus routes on an interactive map using Plotly, assigning each line a distinct color and enabling hover labels for bus stop names.
 
 
-[ScreenRecording2025-04-25at12 03 51PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8ed508ed-60e1-4651-8e69-e71860dd4da0)
+![ScreenRecording2025-04-25at12 03 51PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8ed508ed-60e1-4651-8e69-e71860dd4da0)
 
 
 ---
