@@ -32,7 +32,7 @@ Navigate to your project folder (replace with your actual folder path):
    ```bash
    cd path/to/MTS_Transit_Visualization-main
    ```
-cd path/to/MTS_Transit_Visualization-main 
+  cd path/to/MTS_Transit_Visualization-main 
    ```bash
    python3 main.py
   ```
