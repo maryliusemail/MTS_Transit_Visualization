@@ -41,9 +41,11 @@ Build a clean, organized bus schedule and map visualization for selected San Die
 ![ScreenRecording2025-04-25at12 03 51PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8ed508ed-60e1-4651-8e69-e71860dd4da0)
 
 
+
+
 ---
 
-## MTS Bus Stops Distribution
+## Finding the optimal rounte
 
 **Description**:   
 Build a system to find the shortest bus route between two stops using a graph traversal approach:
@@ -53,22 +55,35 @@ Build a system to find the shortest bus route between two stops using a graph tr
 ![ScreenRecording2025-04-25at12 16 04PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d7a7238b-9da5-4b16-9130-3253ca304f97)
 
 
----
-
-## Bus Arrival Interval Analysis
-
-**Description**:  
-Examined the intervals between bus arrivals to assess their alignment with a Poisson process, uncovering insights into scheduling regularity and passenger wait times.
-
-![Bus Arrival Intervals](insert_image_path_here)
 
 ---
 
 ## Waiting Time Paradox Visualization
 
 **Description**:  
-Explored the discrepancy between average bus intervals and passenger wait times, illustrating the Waiting Time Paradox in the context of San Diego's transit system.
+Simulate random bus arrival times over a day to explore the Waiting Time Paradox:
+  - **`simulate_bus_arrivals_uniform`:** Generate random bus arrival times between 6 AM and midnight based on a given average arrival interval (`tau` minutes). Calculate the time gaps between each arrival to understand how real-world wait times differ from simple averages.
 
-![Waiting Time Analysis](insert_image_path_here)
+![ScreenRecording2025-04-25at12 21 06PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b98a623d-2930-406d-ad28-d3b9d2146420)
+
+In a Poisson process, the time between events follows an exponential distribution—shorter intervals are more frequent, but longer gaps still occur. This explains the Waiting Time Paradox: if you arrive at a random time, you're more likely to land within a longer interval between buses, which skews your average wait time higher than expected.
+
+
+---
+
+## Why the Bus Feels Late: Simulating and Visualizing Bus Transit Patterns
+
+**Description**:   
+Simulate and visualize how passenger wait times vary throughout the day to better understand the Waiting Time Paradox:
+  - **`simulate_wait_times`:** Generate random passenger arrival times and calculate how long each person waits for the next bus. Return a DataFrame with each passenger’s wait time and the bus they board.
+  - **`visualize_wait_times`:** Create a Plotly visualization showing both bus and passenger arrivals over a selected one-hour window. Plot each passenger's wait time as a vertical line, helping illustrate how some passengers wait much longer than others due to randomness in arrival times.
+
+![ScreenRecording2025-04-25at12 27 50PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d26af033-fc57-485a-815c-ef7d80e8ec26)
+
+The Waiting Time Paradox occurs because when you arrive at a bus stop at a random time, you are more likely to land during a longer interval between buses. Longer intervals cover more time, increasing the chance that you find yourself waiting during one of these gaps.
+
+This paradox helps explain why passengers frequently experience longer wait times than scheduled intervals would suggest.  
+By simulating and visualizing bus arrivals and passenger waiting times within a specific one-hour window, we can see this phenomenon clearly — and better appreciate the hidden challenges of real-world transit systems.
+
 
 ---
