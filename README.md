@@ -1,5 +1,22 @@
 # MTS Transit: Navigating San Diego's Bus Network 🚌
+## Project Overview
+This project analyzes San Diego’s MTS bus network using GTFS-derived schedule data and city shapefiles. It visualizes route structures, evaluates inter-arrival intervals, and compares observed data against Poisson-based assumptions.
 
+## Objective
+Generate geospatial visualizations of bus lines and stops, and assess how real-world arrival patterns deviate from theoretical stochastic models.
+
+## Implications
+Transit systems are designed around schedules, not randomness. Analytical models must account for structured behaviors to avoid inaccurate assumptions.
+
+
+## Tools Used
+- **Python**: Core programming language for data analysis and visualization.
+- **Pandas**: Data manipulation and analysis.
+- **GeoPandas**: Handling and visualizing geospatial data.
+- **Plotly**: Creating interactive visualizations.
+- **Shapely**: Geometric operations on spatial data.
+- **Matplotlib**: Plotting static graphs and maps.
+- **NumPy**: Numerical computations.
 ## 🛠️ Try It Yourself
 
 Want to explore the Waiting Time Paradox and bus network simulations on your own?  
@@ -58,24 +75,7 @@ tau = 10  # Average time between bus arrivals in minutes
 
 
    
-## Project Overview
-This project analyzes San Diego’s MTS bus network using GTFS-derived schedule data and city shapefiles. It visualizes route structures, evaluates inter-arrival intervals, and compares observed data against Poisson-based assumptions.
 
-## Objective
-Generate geospatial visualizations of bus lines and stops, and assess how real-world arrival patterns deviate from theoretical stochastic models.
-
-## Implications
-Transit systems are designed around schedules, not randomness. Analytical models must account for structured behaviors to avoid inaccurate assumptions.
-
-
-## Tools Used
-- **Python**: Core programming language for data analysis and visualization.
-- **Pandas**: Data manipulation and analysis.
-- **GeoPandas**: Handling and visualizing geospatial data.
-- **Plotly**: Creating interactive visualizations.
-- **Shapely**: Geometric operations on spatial data.
-- **Matplotlib**: Plotting static graphs and maps.
-- **NumPy**: Numerical computations.
 
 ---
 
